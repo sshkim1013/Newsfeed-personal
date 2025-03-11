@@ -5,13 +5,11 @@ import com.example.newsfeedpersonal.auth.dto.request.SignupRequest;
 import com.example.newsfeedpersonal.auth.dto.response.SigninResponse;
 import com.example.newsfeedpersonal.auth.dto.response.SignupResponse;
 import com.example.newsfeedpersonal.auth.service.AuthService;
+import com.example.newsfeedpersonal.user.dto.request.WithdrawRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -25,8 +23,13 @@ public class AuthController {
         return ResponseEntity.ok(authService.signup(signupRequest));
     }
 
-    @PostMapping("/login")
+    @PostMapping("/signin")
     public ResponseEntity<SigninResponse> signin(@RequestBody @Valid SigninRequest signinRequest) {
         return ResponseEntity.ok(authService.signin(signinRequest));
+    }
+
+    @DeleteMapping("/withdraw")
+    public void withdraw (@RequestBody @Valid WithdrawRequest drawRequest) {
+        authService.withdraw(drawRequest);
     }
 }

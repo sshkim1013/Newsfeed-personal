@@ -61,7 +61,6 @@ public class UserService {
         return new UserUpdateResponse(user.getId(),
                                       user.getEmail(),
                                       user.getName(),
-                                      user.getCreatedAt(),
                                       user.getUpdatedAt()
         );
     }

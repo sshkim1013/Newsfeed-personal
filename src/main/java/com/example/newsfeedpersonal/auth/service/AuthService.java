@@ -6,10 +6,12 @@ import com.example.newsfeedpersonal.auth.dto.response.SigninResponse;
 import com.example.newsfeedpersonal.auth.dto.response.SignupResponse;
 import com.example.newsfeedpersonal.config.JwtUtil;
 import com.example.newsfeedpersonal.config.PasswordEncoder;
+import com.example.newsfeedpersonal.user.dto.request.WithdrawRequest;
 import com.example.newsfeedpersonal.user.entity.User;
 import com.example.newsfeedpersonal.user.repository.UserRepository;
 import com.sun.jdi.request.InvalidRequestStateException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,6 +19,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class AuthService {
 
     private final JwtUtil jwtUtil;
@@ -49,7 +52,6 @@ public class AuthService {
                 () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "회원의 정보를 찾을 수 없습니다.")
         );
 
-        // 로그인 시 이메일과 비밀번호가 일치하지 않을 경우 401을 반환합니다.
         if (!passwordEncoder.matches(signinRequest.getPassword(), user.getPassword())) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "올바르지 않은 비밀번호입니다.");
         }
@@ -58,5 +60,20 @@ public class AuthService {
         String jwt = jwtUtil.substringToken(bearerJwt);
 
         return new SigninResponse(jwt);
+    }
+
+    @Transactional
+    public void withdraw(WithdrawRequest request) {
+
+        log.info("1");
+        User user = userRepository.findByEmail(request.getEmail()).orElseThrow(
+                () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "회원의 정보를 찾을 수 없습니다.")
+        );
+        log.info("2");
+        if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "올바르지 않은 비밀번호입니다.");
+        }
+
+        userRepository.delete(user);
     }
 }

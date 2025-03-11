@@ -15,8 +15,5 @@ public class UserUpdateResponse {
     private final String name;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private final LocalDateTime createdAt;
-
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private final LocalDateTime updatedAt;
 }
