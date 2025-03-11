@@ -37,8 +37,9 @@ public class AuthService {
         User savedUser = userRepository.save(user);
 
         String bearerJwt = jwtUtil.createToken(savedUser.getId(), savedUser.getEmail(), savedUser.getName());
+        String jwt = jwtUtil.substringToken(bearerJwt);
 
-        return new SignupResponse(bearerJwt);
+        return new SignupResponse(jwt);
     }
 
     @Transactional(readOnly = true)
@@ -54,7 +55,8 @@ public class AuthService {
         }
 
         String bearerJwt = jwtUtil.createToken(user.getId(), user.getEmail(), user.getName());
+        String jwt = jwtUtil.substringToken(bearerJwt);
 
-        return new SigninResponse(bearerJwt);
+        return new SigninResponse(jwt);
     }
 }

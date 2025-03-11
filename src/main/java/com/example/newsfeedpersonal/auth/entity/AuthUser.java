@@ -8,12 +8,10 @@ public class AuthUser {
     private Long id;
     private String email;
     private String name;
-    private String password;
 
-    public AuthUser(Long id, String email, String name, String password) {
+    public AuthUser(Long id, String email, String name) {
         this.id = id;
         this.email = email;
         this.name = name;
-        this.password = password;
     }
 }

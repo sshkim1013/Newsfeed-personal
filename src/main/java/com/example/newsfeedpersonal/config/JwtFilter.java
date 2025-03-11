@@ -57,7 +57,6 @@ public class JwtFilter implements Filter {
             httpRequest.setAttribute("userId", Long.parseLong(claims.getSubject()));
             httpRequest.setAttribute("email", claims.get("email"));
             httpRequest.setAttribute("name", claims.get("name"));
-            httpRequest.setAttribute("password", claims.get("password"));
 
             chain.doFilter(request, response);
         } catch (SecurityException | MalformedJwtException e) {

@@ -7,5 +7,5 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class SigninResponse {
 
-    private final String bearerJwt;
+    private final String jwt;
 }
