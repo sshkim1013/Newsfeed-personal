@@ -9,6 +9,10 @@ import com.example.newsfeedpersonal.board.dto.response.BoardSaveResponse;
 import com.example.newsfeedpersonal.board.dto.response.BoardUpdateResponse;
 import com.example.newsfeedpersonal.board.service.BoardService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,29 +34,31 @@ public class BoardController {
     }
 
     @GetMapping
-    public ResponseEntity<List<BoardResponse>> findAll() {
-        return ResponseEntity.ok(boardService.findAll());
+    public ResponseEntity<List<BoardResponse>> findAll(
+            @PageableDefault(page=0, size=10, sort = "createdAt", direction = Sort.Direction.DESC) Pageable pageable
+    ) {
+        return ResponseEntity.ok(boardService.findAll(pageable).getContent());
     }
 
-//    @GetMapping("/{boardId}")
-//    public ResponseEntity<BoardResponse> findOne(@PathVariable Long boardId) {
-//        return ResponseEntity.ok(boardService.findOne(boardId));
-//    }
-//
-//    @PutMapping("/{boardId}")
-//    public ResponseEntity<BoardUpdateResponse> update(
-//            @Auth AuthUser user,
-//            @PathVariable Long boardId,
-//            @RequestBody BoardUpdateRequest request
-//    ) {
-//        return ResponseEntity.ok(boardService.update(user, boardId, request));
-//    }
-//
-//    @DeleteMapping("/{boardId}")
-//    public void delete(
-//            @Auth AuthUser user,
-//            @PathVariable Long boardId
-//    ) {
-//        boardService.delete(user, boardId);
-//    }
+    @GetMapping("/{boardId}")
+    public ResponseEntity<BoardResponse> findOne(@PathVariable Long boardId) {
+        return ResponseEntity.ok(boardService.findOne(boardId));
+    }
+
+    @PutMapping("/{boardId}")
+    public ResponseEntity<BoardUpdateResponse> update(
+            @Auth AuthUser user,
+            @PathVariable Long boardId,
+            @RequestBody BoardUpdateRequest request
+    ) {
+        return ResponseEntity.ok(boardService.update(user, boardId, request));
+    }
+
+    @DeleteMapping("/{boardId}")
+    public void delete(
+            @Auth AuthUser user,
+            @PathVariable Long boardId
+    ) {
+        boardService.delete(user, boardId);
+    }
 }

@@ -88,6 +88,7 @@ public class UserService {
         }
 
         //비밀번호 변경.
-        user.updatePassword(request.getNewPassword());
+        String encodedPassword = passwordEncoder.encode(request.getNewPassword());  //비밀번호 변경 후, 인코딩!!
+        user.updatePassword(encodedPassword);
     }
 }
