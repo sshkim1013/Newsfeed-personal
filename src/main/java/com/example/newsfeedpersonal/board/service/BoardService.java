@@ -109,7 +109,7 @@ public class BoardService {
 
         //[ 예외 처리 ] 타 유저의 게시글을 수정하려고 할 때.
         if (!board.getUser().getId().equals(authUser.getId())) {
-            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "본인의 게시글만 수정할 수 있습니다.");
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "본인의 게시글만 삭제할 수 있습니다.");
         }
 
         boardRepository.delete(board);
