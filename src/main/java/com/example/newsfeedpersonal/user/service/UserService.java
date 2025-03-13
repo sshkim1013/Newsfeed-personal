@@ -49,7 +49,7 @@ public class UserService {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "해당 유저에 대한 프로필 수정 권한이 없습니다.");
         }
 
-        //본인의 프로필만 수정 가능.
+        //이미 존재하는 이메일.
         if (user.getEmail().equals(request.getEmail())) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "이미 존재하는 이메일입니다.");
         }

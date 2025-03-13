@@ -18,6 +18,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Service
@@ -42,12 +46,36 @@ public class BoardService {
                                      savedBoard.getTitle(),
                                      savedBoard.getContent(),
                                      savedBoard.getCreatedAt(),
-                                     savedBoard.getUpdatedAt());
+                                     savedBoard.getUpdatedAt()
+        );
     }
 
     @Transactional(readOnly = true)
-    public Page<BoardResponse> findAll(Pageable pageable) {
-        Page<Board> boards = boardRepository.findAll(pageable);
+    public Page<BoardResponse> findAll(Pageable pageable, String startDate, String endDate) {
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+        LocalDateTime startDateTime = null;
+        LocalDateTime endDateTime = null;
+
+        if (startDate != null) {
+            startDateTime = LocalDate.parse(startDate, formatter).atStartOfDay();
+        }
+        if (endDate != null) {
+            endDateTime = LocalDate.parse(endDate, formatter).atTime(LocalTime.MAX);
+        }
+
+        Page<Board> boards;
+
+        if (startDateTime != null && endDateTime != null) {
+            boards = boardRepository.findByCreatedAtBetween(startDateTime, endDateTime, pageable);
+        } else if (startDateTime != null) {
+            boards = boardRepository.findByCreatedAtAfter(startDateTime, pageable);
+        } else if (endDateTime != null) {
+            boards = boardRepository.findByCreatedAtBefore(endDateTime, pageable);
+        } else {
+            boards = boardRepository.findAll(pageable);
+        }
 
         return boards.map(board -> new BoardResponse(
                         board.getId(),

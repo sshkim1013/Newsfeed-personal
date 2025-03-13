@@ -13,10 +13,12 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -35,9 +37,11 @@ public class BoardController {
 
     @GetMapping
     public ResponseEntity<List<BoardResponse>> findAll(
-            @PageableDefault(page=0, size=10, sort = "createdAt", direction = Sort.Direction.DESC) Pageable pageable
+            @RequestParam(required = false) String startDate,
+            @RequestParam(required = false) String endDate,
+            @PageableDefault(page=0, size=10, sort = "updatedAt", direction = Sort.Direction.DESC) Pageable pageable
     ) {
-        return ResponseEntity.ok(boardService.findAll(pageable).getContent());
+        return ResponseEntity.ok(boardService.findAll(pageable, startDate, endDate).getContent());
     }
 
     @GetMapping("/{boardId}")
