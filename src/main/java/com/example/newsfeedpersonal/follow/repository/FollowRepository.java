@@ -4,7 +4,6 @@ import com.example.newsfeedpersonal.follow.entity.Follow;
 import com.example.newsfeedpersonal.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface FollowRepository extends JpaRepository<Follow, Long> {

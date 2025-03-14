@@ -34,6 +34,9 @@ public class FollowService {
 
         Follow follow = new Follow(sender, receiver);
         followRepository.save(follow);
+
+        sender.increaseFollowingUsers();
+        receiver.increaseFollowerUsers();
     }
 
     public void unfollow(AuthUser authUser, Long targetUserId) {
@@ -53,5 +56,8 @@ public class FollowService {
         );
 
         followRepository.delete(follow);
+
+        sender.decreaseFollowingUsers();
+        receiver.decreaseFollowerUsers();
     }
 }
