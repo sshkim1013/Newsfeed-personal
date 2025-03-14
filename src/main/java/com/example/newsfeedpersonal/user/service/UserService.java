@@ -31,10 +31,10 @@ public class UserService {
 
         //인증 유저 본인이 아니면 민감한 정보(email) 반환 X
         if (!authUser.getId().equals(user.getId())) {
-            return new UserResponse(user.getId(), user.getName());
+            return new UserResponse(user.getId(), user.getName(), user.getFollowerUsers(), user.getFollowingUsers());
         }
 
-        return new UserResponse(user.getId(), user.getEmail(), user.getName());
+        return new UserResponse(user.getId(), user.getEmail(), user.getName(), user.getFollowerUsers(), user.getFollowingUsers());
     }
 
     @Transactional
@@ -61,6 +61,8 @@ public class UserService {
         return new UserUpdateResponse(user.getId(),
                                       user.getEmail(),
                                       user.getName(),
+                                      user.getFollowerUsers(),
+                                      user.getFollowingUsers(),
                                       user.getUpdatedAt()
         );
     }
