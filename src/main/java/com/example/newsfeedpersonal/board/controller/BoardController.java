@@ -9,16 +9,13 @@ import com.example.newsfeedpersonal.board.dto.response.BoardSaveResponse;
 import com.example.newsfeedpersonal.board.dto.response.BoardUpdateResponse;
 import com.example.newsfeedpersonal.board.service.BoardService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -49,6 +46,14 @@ public class BoardController {
         return ResponseEntity.ok(boardService.findOne(boardId));
     }
 
+    @GetMapping("/followsBoards")
+    public ResponseEntity<List<BoardResponse>> findFollowsBoards(
+            @Auth AuthUser authUser,
+            @PageableDefault(page=0, size=10, sort = "createdAt", direction = Sort.Direction.DESC) Pageable pageable
+    ) {
+        return ResponseEntity.ok(boardService.findFollowsBoards(authUser, pageable).getContent());
+    }
+
     @PutMapping("/{boardId}")
     public ResponseEntity<BoardUpdateResponse> update(
             @Auth AuthUser user,
@@ -65,4 +70,5 @@ public class BoardController {
     ) {
         boardService.delete(user, boardId);
     }
+
 }

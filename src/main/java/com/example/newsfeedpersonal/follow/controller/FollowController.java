@@ -1,4 +1,4 @@
-package com.example.newsfeedpersonal.follow;
+package com.example.newsfeedpersonal.follow.controller;
 
 import com.example.newsfeedpersonal.auth.annotation.Auth;
 import com.example.newsfeedpersonal.auth.entity.AuthUser;

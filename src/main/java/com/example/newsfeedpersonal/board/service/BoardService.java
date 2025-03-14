@@ -103,6 +103,25 @@ public class BoardService {
         );
     }
 
+    @Transactional(readOnly = true)
+    public Page<BoardResponse> findFollowsBoards(AuthUser authUser, Pageable pageable) {
+
+        User sender = userRepository.findById(authUser.getId()).orElseThrow(
+                () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "해당 유저를 찾을 수 없습니다.")
+        );
+
+        Page<Board> boards = boardRepository.findAllByFollower(sender.getId(), pageable);
+
+        return boards.map(board -> new BoardResponse(
+                board.getId(),
+                board.getUser().getId(),
+                board.getTitle(),
+                board.getContent(),
+                board.getCreatedAt(),
+                board.getUpdatedAt())
+        );
+    }
+
     @Transactional
     public BoardUpdateResponse update(AuthUser authUser, Long boardId, BoardUpdateRequest request) {
 
