@@ -12,6 +12,7 @@ public class BoardResponse {
     private final Long userId;
     private final String title;
     private final String content;
+    private final int likes;
     private final LocalDateTime createdAt;
     private final LocalDateTime updatedAt;
 }

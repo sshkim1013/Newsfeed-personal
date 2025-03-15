@@ -25,6 +25,9 @@ public class Board extends BaseEntity {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
+    @Column(nullable = false)
+    private int likes = 0;
+
     public Board(String title, String content, User user) {
         this.title = title;
         this.content = content;
@@ -35,4 +38,15 @@ public class Board extends BaseEntity {
         this.title = title;
         this.content = content;
     }
+
+    public void increaseLikes() {
+        likes++;
+    }
+
+    public void decreaseLike() {
+        if (likes > 0) {
+            likes--;
+        }
+    }
+
 }

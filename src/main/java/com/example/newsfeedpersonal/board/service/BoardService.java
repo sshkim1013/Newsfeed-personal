@@ -45,6 +45,7 @@ public class BoardService {
                                      savedBoard.getUser().getId(),
                                      savedBoard.getTitle(),
                                      savedBoard.getContent(),
+                                     savedBoard.getLikes(),
                                      savedBoard.getCreatedAt(),
                                      savedBoard.getUpdatedAt()
         );
@@ -82,6 +83,7 @@ public class BoardService {
                         board.getUser().getId(),
                         board.getTitle(),
                         board.getContent(),
+                        board.getLikes(),
                         board.getCreatedAt(),
                         board.getUpdatedAt())
         );
@@ -98,6 +100,7 @@ public class BoardService {
                                  board.getUser().getId(),
                                  board.getTitle(),
                                  board.getContent(),
+                                 board.getLikes(),
                                  board.getCreatedAt(),
                                  board.getUpdatedAt()
         );
@@ -117,6 +120,7 @@ public class BoardService {
                 board.getUser().getId(),
                 board.getTitle(),
                 board.getContent(),
+                board.getLikes(),
                 board.getCreatedAt(),
                 board.getUpdatedAt())
         );
@@ -141,6 +145,7 @@ public class BoardService {
                                        board.getUser().getId(),
                                        board.getTitle(),
                                        board.getContent(),
+                                       board.getLikes(),
                                        board.getCreatedAt(),
                                        board.getUpdatedAt()
         );

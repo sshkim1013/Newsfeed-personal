@@ -1,4 +1,4 @@
-package com.example.newsfeedpersonal.like.post;
+package com.example.newsfeedpersonal.like.board.entity;
 
 import com.example.newsfeedpersonal.board.entity.Board;
 import com.example.newsfeedpersonal.common.BaseEntity;
@@ -24,11 +24,9 @@ public class BoardLike extends BaseEntity {
     @JoinColumn(name = "board_id", nullable = false)
     private Board board;
 
-    @Column(nullable = false)
-    private boolean likeStatus;
-
-    @PrePersist
-    public void prePersist() {
-        this.likeStatus = false;     // likeBoard 필드의 기본값을 false 처리.
+    public BoardLike(User user, Board board) {
+        this.user = user;
+        this.board = board;
     }
+
 }
