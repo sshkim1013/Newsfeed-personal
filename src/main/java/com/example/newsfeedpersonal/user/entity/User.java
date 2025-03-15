@@ -47,22 +47,22 @@ public class User extends BaseEntity {
     }
 
     public void increaseFollowerUsers() {
-        this.followerUsers++;
+        followerUsers++;
     }
 
     public void increaseFollowingUsers() {
-        this.followingUsers++;
+        followingUsers++;
     }
 
     public void decreaseFollowerUsers() {
         if (followerUsers > 0) {
-            this.followerUsers--;
+            followerUsers--;
         }
     }
 
     public void decreaseFollowingUsers() {
         if (followingUsers > 0) {
-            this.followingUsers--;
+            followingUsers--;
         }
     }
 
