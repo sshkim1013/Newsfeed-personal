@@ -13,6 +13,7 @@ public class CommentResponse {
     private final Long userId;
     private final Long boardId;
     private final String content;
+    private final int likes;
     private final LocalDateTime createdAt;
     private final LocalDateTime updatedAt;
 }

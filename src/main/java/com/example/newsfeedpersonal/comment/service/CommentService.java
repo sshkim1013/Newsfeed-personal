@@ -48,6 +48,7 @@ public class CommentService {
                                        savedComment.getUser().getId(),
                                        savedComment.getBoard().getId(), // == board.getId()
                                        savedComment.getContent(),
+                                       savedComment.getLikes(),
                                        savedComment.getCreatedAt(),
                                        savedComment.getUpdatedAt()
         );
@@ -70,6 +71,7 @@ public class CommentService {
                         comment.getUser().getId(),
                         comment.getBoard().getId(),
                         comment.getContent(),
+                        comment.getLikes(),
                         comment.getCreatedAt(),
                         comment.getUpdatedAt()
                 ))
@@ -101,6 +103,7 @@ public class CommentService {
                                          comment.getUser().getId(),
                                          comment.getBoard().getId(),
                                          comment.getContent(),
+                                         comment.getLikes(),
                                          comment.getCreatedAt(),
                                          comment.getUpdatedAt()
         );
