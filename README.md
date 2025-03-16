@@ -182,7 +182,7 @@
 
 **회원 가입 및 로그인 실패**
 
-1. 중복된 사용자 아이디로 가입
+1. 중복된 사용자 아이디로 가입(회원가입 실패)
 
 <img width="724" alt="스크린샷 2025-03-16 오후 12 58 13" src="https://github.com/user-attachments/assets/e3da9fee-a004-48e9-862f-bce36835d5cd" />
 
@@ -190,9 +190,18 @@
 </br>
 </br>
 
-2. 사용자 아이디나 비밀번호가 형식에 맞지 않는 경우
+2. 사용자 아이디나 비밀번호가 형식에 맞지 않는 경우(회원가입 실패)
 
 <img width="718" alt="스크린샷 2025-03-16 오후 12 58 46" src="https://github.com/user-attachments/assets/8ef225fa-9d55-4f58-b38a-e6048f31d0bd" />
+
+</br>
+</br>
+</br>
+
+3. 회원 가입하지 않은 유저로 로그인을 시도하는 경우(로그인 실패)
+
+<img width="728" alt="스크린샷 2025-03-16 오후 1 29 43" src="https://github.com/user-attachments/assets/701ce1d8-0baf-4030-a421-9e4890ffc4c9" />
+
 
 --- 
 
@@ -303,6 +312,20 @@
 **[ 댓글 삭제 ]**
 
 <img width="722" alt="댓글 삭제" src="https://github.com/user-attachments/assets/de108558-8448-4ccb-80b0-15da53bbcff3" />
+
+
+**[ 다른 유저의 댓글 수정 시도 ]**
+
+<img width="719" alt="스크린샷 2025-03-16 오후 1 28 56" src="https://github.com/user-attachments/assets/b9e311d3-142a-4745-9349-c5a40d2aa66f" />
+
+
+</br>
+</br>
+
+**[ 다른 유저의 댓글 삭제 시도 ]**
+
+<img width="722" alt="스크린샷 2025-03-16 오후 1 29 13" src="https://github.com/user-attachments/assets/cef74e2e-e9ec-4f4a-b026-d5425b72bc19" />
+
 
 --- 
 
