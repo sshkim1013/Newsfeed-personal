@@ -29,6 +29,9 @@
 
 <img width="722" alt="스크린샷 2025-03-16 오전 11 34 12" src="https://github.com/user-attachments/assets/6dd695f1-00f8-4728-840a-7baabc29e6cd" />
 
+</br>
+</br>
+</br>
 
 - **프로필 수정 기능** - 로그인한 사용자는 본인의 사용자 정보를 수정할 수 있습니다.
 
