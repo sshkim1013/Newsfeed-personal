@@ -12,33 +12,6 @@
 
 ### [ API 동작 캡쳐본 ]
 
-#### 회원 가입
-
-- 첫 번째 유저
-
-<img width="724" alt="스크린샷 2025-03-16 오전 11 28 36" src="https://github.com/user-attachments/assets/01938ac2-56d4-4f21-bef2-e6c009909787" />
-
-</br>
-</br>
-</br>
-
-- 두 번째 유저
-
-<img width="722" alt="스크린샷 2025-03-16 오전 11 30 14" src="https://github.com/user-attachments/assets/0c193054-1773-4d9e-b3b0-b0b0cbd0878f" />
-
-</br>
-</br>
-</br>
-
-#### 로그인
-
-- 첫 번째 유저로 로그인
-
-<img width="723" alt="스크린샷 2025-03-16 오전 11 29 24" src="https://github.com/user-attachments/assets/4a63b37d-2571-47e4-8380-06f649ba0a83" />
-
-
----
-
 
 #### 1. 프로필 관리
 
@@ -138,6 +111,13 @@
 </br>
 </br>
 
+**[ 팔로우한 유저의 게시글 조회 ]**
+
+<img width="717" alt="팔로워 게시글 조회" src="https://github.com/user-attachments/assets/3400c861-43c4-4465-be62-a3aab3a0772b" />
+
+</br>
+</br>
+
 **[ 게시글 수정 ]**
 
 <img width="722" alt="게시글 수정" src="https://github.com/user-attachments/assets/08e820de-caae-4650-bfe9-9ebfc4674582" />
@@ -156,9 +136,89 @@
 
 <img width="722" alt="게시글 삭제 후 조회" src="https://github.com/user-attachments/assets/bbf35070-ee21-4ab9-b439-9f4798a0570c" />
 
+
+</br>
+</br>
+</br>
+
+**[ 다른 유저의 게시글 수정 시도 ]**
+
+<img width="723" alt="스크린샷 2025-03-16 오후 12 52 13" src="https://github.com/user-attachments/assets/1630f3ae-050e-461a-8941-555ab840d0ee" />
+
+
+</br>
+</br>
+</br>
+
+**[ 다른 유저의 게시글 삭제 시도 ]**
+
+<img width="721" alt="스크린샷 2025-03-16 오후 12 52 24" src="https://github.com/user-attachments/assets/ae27eb61-da1a-4941-82d2-7279ec95e8e5" />
+
+
 ---
 
+#### 3. 사용자 인증
 
+**회원 가입**
+
+- 첫 번째 유저
+
+<img width="724" alt="스크린샷 2025-03-16 오전 11 28 36" src="https://github.com/user-attachments/assets/01938ac2-56d4-4f21-bef2-e6c009909787" />
+
+</br>
+</br>
+</br>
+
+- 두 번째 유저
+
+<img width="722" alt="스크린샷 2025-03-16 오전 11 30 14" src="https://github.com/user-attachments/assets/0c193054-1773-4d9e-b3b0-b0b0cbd0878f" />
+
+</br>
+</br>
+</br>
+
+**로그인**
+
+- 첫 번째 유저로 로그인
+
+<img width="723" alt="스크린샷 2025-03-16 오전 11 29 24" src="https://github.com/user-attachments/assets/4a63b37d-2571-47e4-8380-06f649ba0a83" />
+
+</br>
+</br>
+</br>
+
+**회원 가입 및 로그인 실패**
+
+1. 중복된 사용자 아이디로 가입
+
+<img width="724" alt="스크린샷 2025-03-16 오후 12 58 13" src="https://github.com/user-attachments/assets/e3da9fee-a004-48e9-862f-bce36835d5cd" />
+
+</br>
+</br>
+</br>
+
+2. 사용자 아이디나 비밀번호가 형식에 맞지 않는 경우
+
+<img width="718" alt="스크린샷 2025-03-16 오후 12 58 46" src="https://github.com/user-attachments/assets/8ef225fa-9d55-4f58-b38a-e6048f31d0bd" />
+
+--- 
+
+#### 4. 팔로우 관리
+
+
+--- 
+
+#### 5. 검색 및 정렬 기능
+
+
+--- 
+
+#### 6. 댓글 기능
+
+
+--- 
+
+#### 7. 좋아요 기능
 
 
 
