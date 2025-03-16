@@ -331,11 +331,10 @@
 
 #### 7. 좋아요 기능
 
-- 게시글
-
 **[ 게시글 좋아요 성공 ]**
 
 <img width="718" alt="게시글 좋아요 생성" src="https://github.com/user-attachments/assets/2493d0f2-fa8d-4f38-b239-b3c836d3af13" />
+<img width="718" alt="스크린샷 2025-03-16 오후 3 31 18" src="https://github.com/user-attachments/assets/d759af19-f504-48f0-ad74-c8704417a3d0" />
 
 
 </br>
@@ -359,7 +358,6 @@
 **[ 게시글 좋아요 취소 성공 ]**
 
 <img width="720" alt="게시글 좋아요 취소" src="https://github.com/user-attachments/assets/2b6fd7af-f565-4686-af46-eaccb6aa12f9" />
-
 <img width="721" alt="게시글 좋아요 취소 후 게시글 조회" src="https://github.com/user-attachments/assets/efbb7df6-7814-4a48-bc32-f83e3609a6dd" />
 
 
@@ -375,11 +373,10 @@
 </br>
 </br>
 
-- 댓글
-
 **[ 댓글 좋아요 성공 ]**
 
-
+<img width="723" alt="스크린샷 2025-03-16 오후 3 49 25" src="https://github.com/user-attachments/assets/1fa484ae-5eab-4faf-ad6a-da6b2288ac2b" />
+<img width="722" alt="스크린샷 2025-03-16 오후 3 44 00" src="https://github.com/user-attachments/assets/fcbc298c-244a-46b7-94e6-5ed2fadf4430" />
 
 </br>
 </br>
@@ -393,12 +390,17 @@
 
 **[ 이미 좋아요한 댓글에 다시 좋아요 - 실패 ]**
 
+<img width="721" alt="스크린샷 2025-03-16 오후 3 44 36" src="https://github.com/user-attachments/assets/0e509b74-2b7f-4978-9531-6e7feb65f332" />
 
 
 </br>
 </br>
 
 **[ 댓글 좋아요 취소 성공 ]**
+
+<img width="721" alt="스크린샷 2025-03-16 오후 3 45 17" src="https://github.com/user-attachments/assets/8f262666-aaef-4a0c-b3d3-6a2d8b9518e0" />
+
+<img width="722" alt="스크린샷 2025-03-16 오후 3 45 43" src="https://github.com/user-attachments/assets/528ab1ae-b502-476a-9c39-8b8ae8ed0bb0" />
 
 
 
@@ -407,6 +409,7 @@
 
 **[ 이미 좋아요 취소한 댓글에 다시 좋아요 취소 - 실패 ]**
 
+<img width="719" alt="스크린샷 2025-03-16 오후 3 45 31" src="https://github.com/user-attachments/assets/30291f72-ad43-4c9e-ad82-dbb5a6d987b5" />
 
 
 </br>
