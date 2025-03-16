@@ -205,6 +205,68 @@
 
 #### 4. 팔로우 관리
 
+**[ 팔로우 성공 ]**
+
+<img width="720" alt="팔로우 성공" src="https://github.com/user-attachments/assets/0cbcd799-9411-4178-a807-168649f89e2f" />
+
+</br>
+</br>
+
+**[ 팔로우 후 팔로잉 및 팔로워 수 변경 ]**
+
+- 팔로우 요청 보낸 유저
+
+<img width="722" alt="스크린샷 2025-03-16 오후 1 09 24" src="https://github.com/user-attachments/assets/f7e33da6-2227-4eb1-a17d-c2313269e47e" />
+
+</br>
+</br>
+
+- 팔로우 요청 받은 유저
+
+<img width="714" alt="스크린샷 2025-03-16 오후 1 09 13" src="https://github.com/user-attachments/assets/bb8705d8-fe5e-4b66-9ac0-5c16b8622d39" />
+
+</br>
+</br>
+
+**[ 이미 팔로우한 유저를 다시 팔로우 - 실패 ]**
+
+<img width="723" alt="스크린샷 2025-03-16 오후 1 13 21" src="https://github.com/user-attachments/assets/26b74d9f-50f6-4769-ae83-dc705997f539" />
+
+
+
+</br>
+</br>
+
+**[ 언팔로우 성공 ]**
+
+<img width="722" alt="언팔로우 성공" src="https://github.com/user-attachments/assets/d7d24cc6-f01a-499c-a47a-4e78f65bdc12" />
+
+</br>
+</br>
+
+**[ 언팔로우 후 팔로잉 및 팔로워 수 변경 ]**
+
+- 언팔로우 한 유저
+
+<img width="719" alt="스크린샷 2025-03-16 오후 1 14 54" src="https://github.com/user-attachments/assets/d89b57fd-3364-4e32-a462-1cee1c6787f0" />
+
+
+</br>
+</br>
+
+- 언팔로우 당한 유저
+- 
+<img width="721" alt="스크린샷 2025-03-16 오후 1 15 04" src="https://github.com/user-attachments/assets/e232aa3b-a369-4459-9a14-2fd4bc2197bc" />
+
+
+
+</br>
+</br>
+
+**[ 이미 언팔로우한 유저를 다시 언팔로우 - 실패  ]**
+
+<img width="725" alt="언팔로우 후 다시 언팔로우 실패" src="https://github.com/user-attachments/assets/a5b50c6c-6c9a-4f6a-b0eb-c66be9b77df9" />
+
 
 --- 
 
@@ -215,6 +277,24 @@
 
 #### 6. 댓글 기능
 
+**[ 댓글 생성 ]**
+
+<img width="721" alt="댓글 생성" src="https://github.com/user-attachments/assets/1b0ad7d9-0eda-4714-96b9-5f66c06b7c95" />
+
+
+**[ 댓글 조회 ]**
+
+<img width="711" alt="댓글 전체 조회" src="https://github.com/user-attachments/assets/d887b2d3-ead6-4e13-9243-6078d6df2b79" />
+
+
+**[ 댓글 수정 ]**
+
+<img width="721" alt="댓글 수정" src="https://github.com/user-attachments/assets/af35d70c-cb3b-43e2-a592-28ab90be1431" />
+
+
+**[ 댓글 삭제 ]**
+
+<img width="722" alt="댓글 삭제" src="https://github.com/user-attachments/assets/de108558-8448-4ccb-80b0-15da53bbcff3" />
 
 --- 
 
