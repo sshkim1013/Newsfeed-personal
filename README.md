@@ -271,7 +271,9 @@
 </br>
 
 **[ 게시글 수정일자 내림차순 정렬 ]**
-<img width="722" alt="게시글 삭제 후 조회" src="https://github.com/user-attachments/assets/bbf35070-ee21-4ab9-b439-9f4798a0570c" />
+
+<img width="722" alt="스크린샷 2025-03-16 오후 1 24 32" src="https://github.com/user-attachments/assets/38eb042d-33c8-4ad3-ac22-8e362736e4be" />
+
 
 --- 
 
