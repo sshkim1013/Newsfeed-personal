@@ -97,13 +97,6 @@
 </br>
 </br>
 
-**[ 게시글 날짜별 조회 ]**
-
-<img width="722" alt="게시글 날짜별 조회" src="https://github.com/user-attachments/assets/c7f2d0b7-5759-4119-9d7f-0e295ed890d3" />
-
-</br>
-</br>
-
 **[ 게시글 단건 조회 ]**
 
 <img width="724" alt="게시글 단건 조회" src="https://github.com/user-attachments/assets/ac0dc8fd-a3d6-4db9-82da-7226c19b36f0" />
@@ -132,7 +125,7 @@
 </br>
 </br>
 
-**[ 게시글 삭제 후 조회 ] + 수정시간 내림차순**
+**[ 게시글 삭제 후 조회 ]**
 
 <img width="722" alt="게시글 삭제 후 조회" src="https://github.com/user-attachments/assets/bbf35070-ee21-4ab9-b439-9f4798a0570c" />
 
@@ -270,6 +263,15 @@
 
 #### 5. 검색 및 정렬 기능
 
+**[ 게시글 날짜별 조회 ]**
+
+<img width="722" alt="게시글 날짜별 조회" src="https://github.com/user-attachments/assets/c7f2d0b7-5759-4119-9d7f-0e295ed890d3" />
+
+</br>
+</br>
+
+**[ 게시글 수정일자 내림차순 정렬 ]**
+<img width="722" alt="게시글 삭제 후 조회" src="https://github.com/user-attachments/assets/bbf35070-ee21-4ab9-b439-9f4798a0570c" />
 
 --- 
 
