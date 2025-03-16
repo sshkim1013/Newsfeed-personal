@@ -331,9 +331,86 @@
 
 #### 7. 좋아요 기능
 
+- 게시글
+
+**[ 게시글 좋아요 성공 ]**
+
+<img width="718" alt="게시글 좋아요 생성" src="https://github.com/user-attachments/assets/2493d0f2-fa8d-4f38-b239-b3c836d3af13" />
+
+
+</br>
+</br>
+
+**[ 본인의 게시글에 좋아요 - 실패 ]**
+
+<img width="726" alt="본인의 게시글 좋아요 실패" src="https://github.com/user-attachments/assets/3f1da93d-6a47-41da-9a3d-e1c7fe6aa734" />
+
+</br>
+</br>
+
+**[ 이미 좋아요한 게시글에 다시 좋아요 - 실패 ]**
+
+<img width="726" alt="이미 좋아요한 게시글에 다시 좋아요 실패" src="https://github.com/user-attachments/assets/f1b4af3c-1459-4cdd-8081-573136170837" />
+
+
+</br>
+</br>
+
+**[ 게시글 좋아요 취소 성공 ]**
+
+<img width="720" alt="게시글 좋아요 취소" src="https://github.com/user-attachments/assets/2b6fd7af-f565-4686-af46-eaccb6aa12f9" />
+
+<img width="721" alt="게시글 좋아요 취소 후 게시글 조회" src="https://github.com/user-attachments/assets/efbb7df6-7814-4a48-bc32-f83e3609a6dd" />
+
+
+</br>
+</br>
+
+**[ 이미 좋아요 취소한 게시글에 다시 좋아요 취소 - 실패 ]**
+
+<img width="724" alt="스크린샷 2025-03-16 오후 3 29 05" src="https://github.com/user-attachments/assets/9340616a-a21e-4020-a0d1-543429684b3b" />
+
+
+</br>
+</br>
+</br>
+
+- 댓글
+
+**[ 댓글 좋아요 성공 ]**
 
 
 
+</br>
+</br>
+
+**[ 본인의 댓글에 좋아요 - 실패 ]**
+
+<img width="724" alt="스크린샷 2025-03-16 오후 3 17 42" src="https://github.com/user-attachments/assets/a249acf4-c440-401f-92b0-c91e872cd013" />
+
+</br>
+</br>
+
+**[ 이미 좋아요한 댓글에 다시 좋아요 - 실패 ]**
+
+
+
+</br>
+</br>
+
+**[ 댓글 좋아요 취소 성공 ]**
+
+
+
+</br>
+</br>
+
+**[ 이미 좋아요 취소한 댓글에 다시 좋아요 취소 - 실패 ]**
+
+
+
+</br>
+</br>
 
 
 
