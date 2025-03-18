@@ -6,6 +6,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Entity
 @NoArgsConstructor
@@ -32,6 +34,13 @@ public class Board extends BaseEntity {
         this.title = title;
         this.content = content;
         this.user = user;
+    }
+
+    public Board(String title, String content, User user, LocalDateTime createdAt) {
+        this.title = title;
+        this.content = content;
+        this.user = user;
+        super.setCreatedAt(createdAt);
     }
 
     public void updateTitleAndContent(String title, String content) {

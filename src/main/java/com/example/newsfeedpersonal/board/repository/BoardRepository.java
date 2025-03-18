@@ -19,5 +19,4 @@ public interface BoardRepository extends JpaRepository<Board, Long> {
 
     @Query("SELECT b FROM Board b JOIN Follow f ON b.user.id = f.receiver.id WHERE f.sender.id = :userId")
     Page<Board> findAllByFollower(@Param("userId") Long userId, Pageable pageable);
-
 }
