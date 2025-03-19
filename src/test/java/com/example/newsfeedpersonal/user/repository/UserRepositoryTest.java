@@ -18,7 +18,7 @@ class UserRepositoryTest {
 
         // given
         String email = "sshkim1013@naver.com";
-        User user = new User(email, "김수환", "Sh097982*");
+        User user = new User(email, "김수환", "@Sh12345");
         userRepository.save(user);
 
         // when
@@ -44,7 +44,7 @@ class UserRepositoryTest {
 
         // given
         String email = "sshkim1013@naver.com";
-        User user = new User(email, "김수환", "Sh097982*");
+        User user = new User(email, "김수환", "@Sh12345");
         userRepository.save(user);
 
         // then
@@ -59,7 +59,7 @@ class UserRepositoryTest {
 
         // given
         String email = "sshkim1013@naver.com";
-        User user = new User(email, "김수환", "Sh097982*");
+        User user = new User(email, "김수환", "@Sh12345");
         userRepository.save(user);
 
         //given & when

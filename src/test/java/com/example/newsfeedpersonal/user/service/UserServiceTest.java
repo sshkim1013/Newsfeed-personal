@@ -41,7 +41,7 @@ class UserServiceTest {
 
     @BeforeEach
     void setUp() {
-        String password = "Sh097982*";
+        String password = "@Sh12345";
         String encodedPassword = encoder.encode(password);
         user = new User("sshkim1013@naver.com", "김수환", encodedPassword);
         ReflectionTestUtils.setField(user, "id", 1L);

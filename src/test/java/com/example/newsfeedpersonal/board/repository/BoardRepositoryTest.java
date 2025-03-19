@@ -14,7 +14,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
@@ -35,13 +34,11 @@ class BoardRepositoryTest {
 
     @BeforeEach
     void setUp() {
-        user = userRepository.save(new User("sshkim1013@naver.com", "김수환", "Sh097982*"));
+        user = userRepository.save(new User("sshkim1013@naver.com", "김수환", "@Sh12345"));
 
         board1 = boardRepository.save(new Board("제목1", "내용1", user, LocalDateTime.now().minusDays(2)));
         board2 = boardRepository.save(new Board("제목2", "내용2", user, LocalDateTime.now().minusDays(1)));
         board3 = boardRepository.save(new Board("제목3", "내용3", user, LocalDateTime.now()));
-
-        boardRepository.saveAll(List.of(board1, board2, board3));
     }
 
     @Test
@@ -76,7 +73,7 @@ class BoardRepositoryTest {
     @Test
     void 특정_날짜_이후에_생성된_게시글_조회() {
         // given
-        LocalDateTime startDate = LocalDateTime.now().minusDays(2);
+        LocalDateTime startDate = LocalDateTime.now().minusDays(3);
         Pageable pageable = PageRequest.of(0, 10);
 
         // when
@@ -90,7 +87,7 @@ class BoardRepositoryTest {
     @Test
     void 팔로워의_게시글_조회_성공() {
         // given
-        User sender = userRepository.save(new User("kimsuhwan99@gmail.com", "김수환", "Sh097982*"));
+        User sender = userRepository.save(new User("kimsuhwan99@gmail.com", "김수환", "@Sh12345"));
         User receiver = userRepository.save(new User("Freedom@naver.com", "프리덤", "@Freedom99"));
 
         Follow follow = new Follow(sender, receiver);
