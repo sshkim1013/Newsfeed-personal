@@ -9,6 +9,23 @@
 - `Instagram`, `Facebook`, `Thread`와 같이 세계적으로 이용되는 SNS에서 영감을 받아 진행한 Newsfeed 프로젝트.
 - 백엔드를 중심으로 프로젝트 개발을 진행.
 
+<br>
+
+**ERD**
+
+<img width="563" alt="스크린샷 2025-03-19 오후 7 17 09" src="https://github.com/user-attachments/assets/65716944-7acc-4d6d-a0c0-19f9010b551f" />
+
+<br>
+<br>
+
+**테스트 커버리지 50% 인증**
+
+<img width="470" alt="스크린샷 2025-03-19 오후 7 13 31" src="https://github.com/user-attachments/assets/8d174348-16d0-45c2-8f1f-8764bcfbcd85" />
+
+<br>
+<br>
+<br>
+
 **프로그램 기능**
 
 - **인증/인가** : 회원 가입, 로그인, 회원 탈퇴.
